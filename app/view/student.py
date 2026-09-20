@@ -4,4 +4,4 @@ class StudentBody(BaseModel):
     first_name: str
     last_name: str
     age: int
-    courses: list[str]
+    courses: list[str] | None = None
