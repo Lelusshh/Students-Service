@@ -5,6 +5,7 @@ from app.view.category import StudentBody
 
 @app.post("/students")
 def create_student(student: StudentBody):
+
     return model.create_student(student)
 
 @app.delete("/students/{student_i}")
